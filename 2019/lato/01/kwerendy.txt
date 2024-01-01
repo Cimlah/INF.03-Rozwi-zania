@@ -1,0 +1,19 @@
+Kwerenda 1:
+SELECT nazwa
+FROM towary
+WHERE promocja = 1;
+
+Kwerenda 2:
+SELECT cena
+FROM towary
+WHERE nazwa = 'Cienkopis';
+
+Kwerenda 3:
+SELECT dostawcy.nazwa, COUNT(towary.idDostawcy) as ilosc
+FROM dostawcy INNER JOIN towary
+ON dostawcy.id = towary.idDostawcy
+GROUP BY dostawcy.nazwa;
+
+Kwerenda 4:
+ALTER TABLE dostawcy
+ADD COLUMN e_mai TEXT;
