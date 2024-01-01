@@ -49,6 +49,7 @@
                 $priceAfterDiscount = round(mysqli_fetch_array($query2)[0] * 0.85, 2);
 
                 echo $priceAfterDiscount;
+                mysqli_close($conncection2);
             }
             ?>
         </section>
