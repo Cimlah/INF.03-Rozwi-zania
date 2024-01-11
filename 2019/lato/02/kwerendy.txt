@@ -1,0 +1,18 @@
+Zapytanie 1:
+SELECT nazwa, cena
+FROM towary
+LIMIT 4;
+
+Zapytanie 2:
+SELECT cena
+FROM towary
+WHERE nazwa = 'Cyrkiel';
+
+Zapytanie 3:
+SELECT nazwa
+FROM towary;
+
+Zapytanie 4:
+SELECT promocja, COUNT(*) AS ilosc
+FROM towary
+GROUP BY promocja;
